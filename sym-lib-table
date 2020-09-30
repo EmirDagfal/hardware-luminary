@@ -1,6 +1,4 @@
 (sym_lib_table
-  (lib (name MCP6001T-I_OT)(type Legacy)(uri ${KIPRJMOD}/components/OpAmp/LIB_MCP6001T-I_OT/MCP6001T-I_OT/KiCad/MCP6001T-I_OT.lib)(options "")(descr ""))
-  (lib (name EESAMR34)(type Legacy)(uri ${KIPRJMOD}/components/EESAMR34/lib/EESAMR34J18-V1_CT.lib)(options "")(descr ""))
-  (lib (name LED_12-22)(type Legacy)(uri ${KIPRJMOD}/components/Leds/LIB_12-22SURSYGC_S530-A2_TR8/12-22SURSYGC_S530-A2_TR8/KiCad/12-22SURSYGC_S530-A2_TR8.lib)(options "")(descr ""))
-  (lib (name 1909763-1)(type Legacy)(uri "${KIPRJMOD}/components/UFL Conn/1909763-1/1909763-1.lib")(options "")(descr ""))
+  (lib (name proyect_EESAMR34J18-V1_CT)(type Legacy)(uri ${KIPRJMOD}/components/EESAMR34/lib/EESAMR34J18-V1_CT.lib)(options "")(descr ""))
+  (lib (name proyect_MCP6001T-I_OT)(type Legacy)(uri ${KIPRJMOD}/components/OpAmp/LIB_MCP6001T-I_OT/MCP6001T-I_OT/KiCad/MCP6001T-I_OT.lib)(options "")(descr ""))
 )
