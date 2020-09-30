@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'IRM_03_12'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Mean Well", "IRM-03-12" (!) = "", "IRM0312", "Other", "IRM-03-12", "https://www.arrow.com/en/products/irm-03-12/mean-well-enterprises", "709-IRM03-12", "https://www.mouser.co.uk/ProductDetail/MEAN-WELL/IRM-03-12?qs=NKmfXavxMawjMKY4aLDNfg%3D%3D", "Mean Well 3W Encapsulated Switch Mode Power Supply, 0  250mA, 12V dc", "https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/IRM-03/IRM-03-spec.pdf", "15 mm"
+END_PART
+
+END.

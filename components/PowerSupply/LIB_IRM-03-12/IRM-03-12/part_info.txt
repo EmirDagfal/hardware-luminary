@@ -1,0 +1,9 @@
+Manufacturer=Mean Well
+PartNumber=IRM-03-12
+PartCategory=Power Supply
+PackageCategory=Other
+PinCount=7
+Version=1.1
+Released=2019-01-10 20:29:35
+Downloaded=2020-09-30 22:39:40
+3D=Y

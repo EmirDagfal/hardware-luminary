@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRM-03-12
+D Mean Well 3W Encapsulated Switch Mode Power Supply, 0  250mA, 12V dc
+K
+F https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/IRM-03/IRM-03-spec.pdf
+$ENDCMP
+#
+#End Doc Library

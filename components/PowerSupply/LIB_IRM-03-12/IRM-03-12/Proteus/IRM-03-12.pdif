@@ -1,0 +1,153 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "IRM-03-12"
+   (description "Mean Well 3W Encapsulated Switch Mode Power Supply, 0  250mA, 12V dc")
+   (family "ANA")
+   (package "IRM0312")
+   (attribute "Datasheet Link" "https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/IRM-03/IRM-03-spec.pdf")
+   (attribute "Geometry.Height" "15mm")
+   (attribute "Manufacturer_Name" "Mean Well")
+   (attribute "Manufacturer_Part_Number" "IRM-03-12")
+   (attribute "Arrow Part Number" "IRM-03-12")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/irm-03-12/mean-well-enterprises")
+   (attribute "Mouser Part Number" "709-IRM03-12")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/MEAN-WELL/IRM-03-12?qs=NKmfXavxMawjMKY4aLDNfg%3D%3D")
+   (gate
+    (symbol "IRM-03-12")
+    (pin "AC/L" 1 PS)
+    (pin "AC/N" 2 PS)
+    (pin "NC" 3 NC)
+    (pin "-V" 4 PS)
+    (pin "+V" 5 PS)
+    (pin "6" 6 PS)
+    (pin "7" 7 PS)
+   )
+  )
+  (symbol "IRM-03-12"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 800 100) (pt 800 -400) (pt 200 -400) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "IRM0312"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.26 -3.1)
+      (pt 33.74 -3.1)
+      (pt 33.74 20.9)
+      (pt -3.26 20.9)
+      (pt -3.26 -3.1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.26 -3.1)
+      (pt 33.74 -3.1)
+      (pt 33.74 20.9)
+      (pt -3.26 20.9)
+      (pt -3.26 -3.1))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.26 -4.1)
+      (pt 34.74 -4.1)
+      (pt 34.74 21.9)
+      (pt -4.26 21.9)
+      (pt -4.26 -4.1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.8 -0.1)
+      (arc (pt -3.800 -0.100) (pt -3.900 0.100) (pt -3.700 -0.100) (start 180.0) (sweep -90.0))
+      (pt -3.8 0.1)
+      (arc (pt -3.800 0.100) (pt -3.900 0.100) (pt -3.700 -0.100) (start 180.0) (sweep 90.0))
+      (pt -3.8 -0.1))))
+   (leg 1 (pt 0.000 0.000) (padstack 0))
+   (leg 2 (pt 5.080 0.000) (padstack 0))
+   (leg 3 (pt 30.480 0.000) (padstack 0))
+   (leg 4 (pt 30.480 17.780) (padstack 0))
+   (leg 5 (pt 25.400 17.780) (padstack 0))
+   (leg 6 (pt 7.020 8.900) (padstack 6))
+   (leg 7 (pt 23.460 8.900) (padstack 7))
+   (padstack 0
+    (hole 0.9)
+    (plated true)
+    (pad (layer TCOP) (round 1.400))
+    (pad (layer INNER) (round 1.400))
+    (pad (layer BCOP) (round 1.400))
+   )
+   (padstack 6
+    (hole 4.5)
+    (plated true)
+    (pad (layer TCOP) (round 6.750))
+    (pad (layer INNER) (round 6.750))
+    (pad (layer BCOP) (round 6.750))
+   )
+   (padstack 7
+    (hole 4.5)
+    (plated true)
+    (pad (layer TCOP) (round 6.750))
+    (pad (layer INNER) (round 6.750))
+    (pad (layer BCOP) (round 6.750))
+   )
+   (model "IRM-03-12.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

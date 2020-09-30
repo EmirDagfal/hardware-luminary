@@ -1,0 +1,18 @@
+.IRM-03-12 :1 ;Mean Well 3W Encapsulated Switch Mode Power Supply, 0  250mA, 12V dc
+IRM0312
+*STM PS
+*NGS
+*PLB 1="AC/L" 2="AC/N" 3="NC" 4="-V" 5="+V" 6="6" 7="7"
+*MXP 7
+*DFN IRM-03-12
+~!Manufacturer_Name (Mean Well)
+~!Manufacturer_Part_Number (IRM-03-12)
+~!Arrow Part Number (IRM-03-12)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/irm-03-12/mean-well-enterprises)
+~!Mouser Part Number (709-IRM03-12)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/MEAN-WELL/IRM-03-12?qs=NKmfXavxMawjMKY4aLDNfg%3D%3D)
+~!Link Datasheet (https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/IRM-03/IRM-03-spec.pdf)
+~!Height (15mm)
+~!3D_Model (IRM-03-12)
+IRM-03-12
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 
