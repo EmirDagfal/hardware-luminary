@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 12-22SURSYGC_S530-A2_TR8
+#/641785/330000/2.47/3/4/LED
+DEF 12-22SURSYGC_S530-A2_TR8 LED 0 30 Y Y 1 F N
+F0 "LED" 850 300 50 H V L CNN
+F1 "12-22SURSYGC_S530-A2_TR8" 850 200 50 H V L CNN
+F2 "1222SURSYGCS530A2TR8" 850 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/12-22SURSYGC_S530-A2_TR8.pdf" 850 0 50 H I L CNN
+F4 "LED Bi-Color Red/Yellow Green 632nm/575nm 3-Pin Chip LED T/R" 850 -100 50 H I L CNN "Description"
+F5 "2.2" 850 -200 50 H I L CNN "Height"
+F6 "Everlight" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "12-22SURSYGC/S530-A2/TR8" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "12-22SURSYGC/S530-A2/TR8" 850 -500 50 H I L CNN "Arrow Part Number"
+F9 "" 850 -600 50 H I L CNN "Arrow Price/Stock"
+F10 "638-1222SURSYGCA2TR8" 850 -700 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.com/Search/Refine.aspx?Keyword=638-1222SURSYGCA2TR8" 850 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+X + A1 1000 -100 200 L 50 50 0 0 P
+X -_1 C1 1000 0 200 L 50 50 0 0 P
+X -_2 C2 0 0 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

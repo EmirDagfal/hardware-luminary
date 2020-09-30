@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MCP6001T_I_OT'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Microchip", "MCP6001T-I/OT" (!) = "", "SOT95P270X145-5N", "SOT23 (5-Pin)", "MCP6001T-I/OT", "https://www.arrow.com/en/products/mcp6001t-iot/microchip-technology", "579-MCP6001T-I/OT", "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP6001T-I-OT?qs=Q%2Fw7XRh99iki9dglS7IqJg%3D%3D", "Single 1.8V Op Amp, 1MHz, I temp", "http://docs-emea.rs-online.com/webdocs/0dd1/0900766b80dd189c.pdf", "1.45 mm"
+END_PART
+
+END.

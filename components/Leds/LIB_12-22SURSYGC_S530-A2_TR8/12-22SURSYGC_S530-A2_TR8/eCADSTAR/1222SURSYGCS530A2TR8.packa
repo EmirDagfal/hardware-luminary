@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "12-22SURSYGC_S530-A2_TR8"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-09-01-10:45:54)
+    (mountForm default
+        (footprintRef "1222SURSYGCS530A2TR8")
+        (spec "System")
+    )
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP6001T-I_OT
+D Single 1.8V Op Amp, 1MHz, I temp
+K
+F http://docs-emea.rs-online.com/webdocs/0dd1/0900766b80dd189c.pdf
+$ENDCMP
+#
+#End Doc Library

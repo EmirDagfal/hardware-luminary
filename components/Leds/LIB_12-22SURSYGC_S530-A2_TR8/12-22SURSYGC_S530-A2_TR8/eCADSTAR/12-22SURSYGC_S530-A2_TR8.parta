@@ -1,0 +1,72 @@
+(Japanese_coding: sjis)
+(function "ECS_641785"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-09-01-10:45:54)
+    (utime 2020-09-08-12:06:22)
+    (interface
+        (port "A1" (symbPinId 1) (portType INOUT))
+        (port "C1" (symbPinId 2) (portType INOUT))
+        (port "C2" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "12-22SURSYGC_S530-A2_TR8")
+)
+
+
+(pinAssign "ECS_641785"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-09-01-10:45:54)
+    (utime 2020-09-08-12:06:22)
+    (interface
+        (port "A1" (symbPinId 1) (portName "+") (portType INOUT))
+        (port "C1" (symbPinId 2) (portName "-_1") (portType INOUT))
+        (port "C2" (symbPinId 3) (portName "-_2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_641785")
+                (port "A1" (match "A1"))
+                (port "C1" (match "C1"))
+                (port "C2" (match "C2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "12-22SURSYGC_S530-A2_TR8")
+)
+
+
+(part "12-22SURSYGC_S530-A2_TR8"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-09-01-10:45:54)
+    (utime 2020-09-08-12:06:22)
+    (packageRef "12-22SURSYGC_S530-A2_TR8")
+    (pinAssignRef "ECS_641785")
+    (interface
+        (port "A1" (symbPinId 1) (portName "+") (portType INOUT))
+        (port "C1" (symbPinId 2) (portName "-_1") (portType INOUT))
+        (port "C2" (symbPinId 3) (portName "-_2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "LED")
+    (property "description" "LED Bi-Color Red/Yellow Green 632nm/575nm 3-Pin Chip LED T/R")
+    (property "Manufacturer_Name" "Everlight")
+    (property "Manufacturer_Part_Number" "12-22SURSYGC/S530-A2/TR8")
+    (property "Arrow_Part_Number" "12-22SURSYGC/S530-A2/TR8")
+    (property "Arrow_Price/Stock" "")
+    (property "Mouser_Part_Number" "638-1222SURSYGCA2TR8")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=638-1222SURSYGCA2TR8")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/1/12-22SURSYGC_S530-A2_TR8.pdf")
+    (property "compAreaTopHeight" 2.2)
+)
+
+

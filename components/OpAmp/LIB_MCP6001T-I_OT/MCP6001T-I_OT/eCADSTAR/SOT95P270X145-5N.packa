@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MCP6001T-I_OT"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-07-15-13:06:08)
+    (mountForm default
+        (footprintRef "SOT95P270X145-5N")
+        (spec "System")
+    )
+)

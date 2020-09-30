@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '12_22SURSYGC_S530_A2_TR8'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Everlight", "12-22SURSYGC/S530-A2/TR8" (!) = "", "1222SURSYGCS530A2TR8", "Other", "12-22SURSYGC/S530-A2/TR8", "", "638-1222SURSYGCA2TR8", "https://www.mouser.com/Search/Refine.aspx?Keyword=638-1222SURSYGCA2TR8", "LED Bi-Color Red/Yellow Green 632nm/575nm 3-Pin Chip LED T/R", "https://componentsearchengine.com/Datasheets/1/12-22SURSYGC_S530-A2_TR8.pdf", "2.2 mm"
+END_PART
+
+END.

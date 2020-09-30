@@ -1,0 +1,9 @@
+Manufacturer=Everlight
+PartNumber=12-22SURSYGC/S530-A2/TR8
+PartCategory=LED
+PackageCategory=Other
+PinCount=3
+Version=1.6
+Released=2020-09-01 10:45:54
+Downloaded=2020-09-30 16:03:06
+3D=N

@@ -1,0 +1,18 @@
+.12-22SURSYGC_S530-A2_TR8 :1 ;LED Bi-Color Red/Yellow Green 632nm/575nm 3-Pin Chip LED T/R
+"1222SURSYGCS530A2TR8"
+*STM LED
+*NGS
+*PNM 1=A1 2=C1 3=C2
+*PLB 1="+" 2="-_1" 3="-_2"
+*MXP 3
+*DFN 12-22SURSYGC_S530-A2_TR8
+~!Manufacturer_Name (Everlight)
+~!Manufacturer_Part_Number (12-22SURSYGC/S530-A2/TR8)
+~!Arrow Part Number (12-22SURSYGC/S530-A2/TR8)
+~!Arrow Price/Stock (-)
+~!Mouser Part Number (638-1222SURSYGCA2TR8)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=638-1222SURSYGCA2TR8)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/12-22SURSYGC_S530-A2_TR8.pdf)
+~!Height (2.2mm)
+"12-22SURSYGC_S530-A2_TR8"
+1.1!U 2.1!U 3.1!U 

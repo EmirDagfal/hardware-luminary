@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "1222SURSYGCS530A2TR8"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "1222SURSYGCS530A2TR8")
+        (spec "default")
+    )
+)
