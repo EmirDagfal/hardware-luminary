@@ -559,17 +559,6 @@ Wire Wire Line
 Wire Wire Line
 	850  3200 1050 3200
 $Comp
-L Relay:DIPxx-1Cxx-51x K1
-U 1 1 5F8071A4
-P 6200 7700
-F 0 "K1" V 6767 7700 50  0000 C CNN
-F 1 "HL2-1CH-12S" V 6676 7700 50  0000 C CNN
-F 2 "" H 6650 7650 50  0001 L CNN
-F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 6200 7700 50  0001 C CNN
-	1    6200 7700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Diode:1N4007 D1
 U 1 1 5F8090AB
 P 6200 8200
@@ -1572,4 +1561,15 @@ Wire Wire Line
 	3000 1200 3100 1200
 Wire Wire Line
 	2600 1350 3000 1350
+$Comp
+L proyect_new:HL2-1CH-12S K?
+U 1 1 5F7D0ED4
+P 6200 7700
+F 0 "K?" V 6767 7700 50  0000 C CNN
+F 1 "HL2-1CH-12S" V 6676 7700 50  0000 C CNN
+F 2 "Relay_THT:HL2-1CH-12S" H 6650 7650 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 6200 7700 50  0001 C CNN
+	1    6200 7700
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

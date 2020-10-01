@@ -4,4 +4,5 @@
   (lib (name proyect_UFL-Conn)(type Legacy)(uri "${KIPRJMOD}/components/UFL Conn/1909763-1/1909763-1.lib")(options "")(descr ""))
   (lib (name proyect_IRM-03-12)(type Legacy)(uri ${KIPRJMOD}/components/PowerSupply/LIB_IRM-03-12/IRM-03-12/KiCad/IRM-03-12.lib)(options "")(descr ""))
   (lib (name proyect_12-22_LEDs)(type Legacy)(uri ${KIPRJMOD}/components/Leds/LIB_12-22SURSYGC_S530-A2_TR8/12-22SURSYGC_S530-A2_TR8/KiCad/12-22SURSYGC_S530-A2_TR8.lib)(options "")(descr ""))
+  (lib (name proyect_new)(type Legacy)(uri ${KIPRJMOD}/components/new/New_Library.lib)(options "")(descr ""))
 )
