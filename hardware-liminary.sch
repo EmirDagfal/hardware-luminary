@@ -96,20 +96,9 @@ U 1 1 5F73EE47
 P 7050 900
 F 0 "L1" V 7240 900 50  0000 C CNN
 F 1 "3.3uH" V 7149 900 50  0000 C CNN
-F 2 "" H 7050 900 50  0001 C CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_MD-2020" H 7050 900 50  0001 C CNN
 F 3 "~" H 7050 900 50  0001 C CNN
 	1    7050 900 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L_Core_Iron L2
-U 1 1 5F74052A
-P 6350 1950
-F 0 "L2" V 6575 1950 50  0000 C CNN
-F 1 "L_Core_Iron" V 6484 1950 50  0000 C CNN
-F 2 "" H 6350 1950 50  0001 C CNN
-F 3 "~" H 6350 1950 50  0001 C CNN
-	1    6350 1950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -118,7 +107,7 @@ U 1 1 5F741836
 P 5700 900
 F 0 "U2" H 5700 1142 50  0000 C CNN
 F 1 "LD1117S33TR_SOT223" H 5700 1051 50  0000 C CNN
-F 2 "" H 5700 1100 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5700 1100 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 5800 650 50  0001 C CNN
 	1    5700 900 
 	1    0    0    -1  
@@ -528,7 +517,7 @@ U 1 1 5F79A701
 P 1600 4050
 F 0 "Q3" H 1791 4096 50  0000 L CNN
 F 1 "CMBT2222A" H 1791 4005 50  0000 L CNN
-F 2 "" H 1800 4150 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 1800 4150 50  0001 C CNN
 F 3 "~" H 1600 4050 50  0001 C CNN
 	1    1600 4050
 	-1   0    0    -1  
@@ -575,7 +564,7 @@ U 1 1 5F80A321
 P 6650 8500
 F 0 "Q1" H 6841 8546 50  0000 L CNN
 F 1 "CMBT3904" H 6841 8455 50  0000 L CNN
-F 2 "" H 6850 8600 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6850 8600 50  0001 C CNN
 F 3 "~" H 6650 8500 50  0001 C CNN
 	1    6650 8500
 	-1   0    0    -1  
@@ -623,7 +612,7 @@ U 1 1 5F82A63B
 P 7000 7500
 F 0 "JP2" H 7000 7735 50  0000 C CNN
 F 1 "Jumper_2_Open" H 7000 7644 50  0000 C CNN
-F 2 "" H 7000 7500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7000 7500 50  0001 C CNN
 F 3 "~" H 7000 7500 50  0001 C CNN
 	1    7000 7500
 	1    0    0    -1  
@@ -1043,7 +1032,7 @@ U 1 1 5FA03644
 P 4600 6250
 F 0 "SW1" H 4600 6535 50  0000 C CNN
 F 1 "SW_Push" H 4600 6444 50  0000 C CNN
-F 2 "" H 4600 6450 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 4600 6450 50  0001 C CNN
 F 3 "~" H 4600 6450 50  0001 C CNN
 	1    4600 6250
 	1    0    0    -1  
@@ -1395,15 +1384,7 @@ F 3 "~" H 6400 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 1000 9150 0    118  ~ 24
-Program & Debug
-Wire Notes Line
-	950  8950 950  10700
-Wire Notes Line
-	950  10700 2650 10700
-Wire Notes Line
-	2650 10700 2650 8950
-Wire Notes Line
-	2650 8950 950  8950
+Program & Console
 Text Notes 5250 7050 0    118  ~ 24
 Relay Module
 Wire Notes Line
@@ -1486,28 +1467,6 @@ F 4 "1" H 6900 6000 50  0001 L BNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR0114
-U 1 1 5F89AEDC
-P 9050 9950
-F 0 "#PWR0114" H 9050 9700 50  0001 C CNN
-F 1 "GNDA" H 9055 9777 50  0000 C CNN
-F 2 "" H 9050 9950 50  0001 C CNN
-F 3 "" H 9050 9950 50  0001 C CNN
-	1    9050 9950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5F89C39F
-P 9050 9950
-F 0 "#FLG0101" H 9050 10025 50  0001 C CNN
-F 1 "PWR_FLAG" H 9050 10123 50  0000 C CNN
-F 2 "" H 9050 9950 50  0001 C CNN
-F 3 "~" H 9050 9950 50  0001 C CNN
-	1    9050 9950
-	1    0    0    -1  
-$EndComp
-$Comp
 L proyect_12-22_LEDs:12-22SURSYGC_S530-A2_TR8 LED1
 U 1 1 5F8A983B
 P 4500 8150
@@ -1562,14 +1521,33 @@ Wire Wire Line
 Wire Wire Line
 	2600 1350 3000 1350
 $Comp
-L proyect_new:HL2-1CH-12S K?
+L proyect_new:HL2-1CH-12S K1
 U 1 1 5F7D0ED4
 P 6200 7700
-F 0 "K?" V 6767 7700 50  0000 C CNN
+F 0 "K1" V 6767 7700 50  0000 C CNN
 F 1 "HL2-1CH-12S" V 6676 7700 50  0000 C CNN
 F 2 "Relay_THT:HL2-1CH-12S" H 6650 7650 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 6200 7700 50  0001 C CNN
 	1    6200 7700
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	950  8950 950  10600
+Wire Notes Line
+	950  10600 2800 10600
+Wire Notes Line
+	2800 10600 2800 8950
+Wire Notes Line
+	2800 8950 950  8950
+$Comp
+L Device:L_Core_Ferrite L2
+U 1 1 5F7A5248
+P 6350 1950
+F 0 "L2" V 6575 1950 50  0000 C CNN
+F 1 "L_Core_Ferrite" V 6484 1950 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6350 1950 50  0001 C CNN
+F 3 "~" H 6350 1950 50  0001 C CNN
+	1    6350 1950
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
