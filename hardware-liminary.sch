@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:Varistor RV1
 U 1 1 5F736B9D
-P 3100 1100
-F 0 "RV1" H 2979 1054 50  0000 R CNN
-F 1 "Varistor" H 2979 1145 50  0000 R CNN
-F 2 "Varistor:RV_Disc_D15.5mm_W3.9mm_P7.5mm" V 3030 1100 50  0001 C CNN
-F 3 "~" H 3100 1100 50  0001 C CNN
-	1    3100 1100
+P 2600 1100
+F 0 "RV1" H 2479 1054 50  0000 R CNN
+F 1 "Varistor" H 2479 1145 50  0000 R CNN
+F 2 "Varistor:RV_Disc_D15.5mm_W3.9mm_P7.5mm" V 2530 1100 50  0001 C CNN
+F 3 "~" H 2600 1100 50  0001 C CNN
+	1    2600 1100
 	1    0    0    1   
 $EndComp
 $Comp
@@ -274,37 +274,18 @@ Wire Wire Line
 	3300 2000 3400 2000
 Wire Wire Line
 	3400 2000 3400 2050
-Text Label 2700 850  2    50   ~ 0
+Text Label 2200 850  2    50   ~ 0
 Linea
-Text Label 2700 1350 2    50   ~ 0
+Text Label 2200 1350 2    50   ~ 0
 Neutro
 Wire Wire Line
-	2700 850  3100 850 
+	2200 850  2600 850 
 Wire Wire Line
-	3100 850  3100 950 
+	2600 850  2600 950 
 Wire Wire Line
-	2700 1350 3100 1350
+	2200 1350 2600 1350
 Wire Wire Line
-	3100 1350 3100 1250
-$Comp
-L MCP6001T-I_OT:MCP6001T-I_OT U6
-U 1 1 5F764C68
-P 3550 3500
-F 0 "U6" H 4150 3350 50  0000 C CNN
-F 1 "MCP6001T-I_OT" H 4150 3250 50  0000 C CNN
-F 2 "" H 4600 3900 50  0001 L CNN
-F 3 "http://docs-emea.rs-online.com/webdocs/0dd1/0900766b80dd189c.pdf" H 4600 3800 50  0001 L CNN
-F 4 "Single 1.8V Op Amp, 1MHz, I temp" H 4600 3700 50  0001 L CNN "Description"
-F 5 "1.45" H 4600 3600 50  0001 L CNN "Height"
-F 6 "Microchip" H 4600 3500 50  0001 L CNN "Manufacturer_Name"
-F 7 "MCP6001T-I/OT" H 4600 3400 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "MCP6001T-I/OT" H 4600 3300 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/mcp6001t-iot/microchip-technology" H 4600 3200 50  0001 L CNN "Arrow Price/Stock"
-F 10 "579-MCP6001T-I/OT" H 4600 3100 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP6001T-I-OT?qs=Q%2Fw7XRh99iki9dglS7IqJg%3D%3D" H 4600 3000 50  0001 L CNN "Mouser Price/Stock"
-	1    3550 3500
-	-1   0    0    -1  
-$EndComp
+	2600 1350 2600 1250
 $Comp
 L Device:R R7
 U 1 1 5F768523
@@ -578,17 +559,6 @@ Wire Wire Line
 Wire Wire Line
 	850  3200 1050 3200
 $Comp
-L Relay:DIPxx-1Cxx-51x K1
-U 1 1 5F8071A4
-P 6200 7700
-F 0 "K1" V 6767 7700 50  0000 C CNN
-F 1 "HL2-1CH-12S" V 6676 7700 50  0000 C CNN
-F 2 "" H 6650 7650 50  0001 L CNN
-F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 6200 7700 50  0001 C CNN
-	1    6200 7700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Diode:1N4007 D1
 U 1 1 5F8090AB
 P 6200 8200
@@ -811,17 +781,6 @@ Wire Notes Line
 	500  4700 5800 4700
 Wire Notes Line
 	5800 2400 500  2400
-$Comp
-L EESAMR34:EESAMR34J18-V1_CT U1
-U 1 1 5F95A58C
-P 2000 6650
-F 0 "U1" H 2150 6700 50  0000 R CNN
-F 1 "EESAMR34J18-V1_CT" H 2500 6550 50  0000 R CNN
-F 2 "" H 2000 6650 50  0001 L BNN
-F 3 "" H 2000 6650 118 0001 C CNN
-	1    2000 6650
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GNDD #PWR0103
 U 1 1 5F965ECC
@@ -1126,7 +1085,7 @@ L Connector_Generic:Conn_02x05_Odd_Even J4
 U 1 1 5FA24E5F
 P 1650 9700
 F 0 "J4" H 1700 10117 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 1700 10026 50  0000 C CNN
+F 1 "SWD" H 1700 10026 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 1650 9700 50  0001 C CNN
 F 3 "~" H 1650 9700 50  0001 C CNN
 	1    1650 9700
@@ -1270,7 +1229,7 @@ L Connector_Generic:Conn_01x02 J5
 U 1 1 5F83DE54
 P 1800 10400
 F 0 "J5" H 1718 10617 50  0000 C CNN
-F 1 "Conn_01x02" H 1718 10526 50  0000 C CNN
+F 1 "Console" H 1718 10526 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1800 10400 50  0001 C CNN
 F 3 "~" H 1800 10400 50  0001 C CNN
 	1    1800 10400
@@ -1297,25 +1256,6 @@ Text Label 1800 8150 2    50   ~ 0
 Photocell
 Wire Wire Line
 	1800 7650 1800 8150
-$Comp
-L LED_12-22:12-22SURSYGC_S530-A2_TR8 LED1
-U 1 1 5F8C80DF
-P 4500 8150
-F 0 "LED1" H 5000 8415 50  0000 C CNN
-F 1 "12-22/G6R6C-A31/2C" H 5000 8324 50  0000 C CNN
-F 2 "" H 5350 8250 50  0001 L CNN
-F 3 "" H 5350 8150 50  0001 L CNN
-F 4 "" H 5350 8050 50  0001 L CNN "Description"
-F 5 "2.2" H 5350 7950 50  0001 L CNN "Height"
-F 6 "Everlight" H 5350 7850 50  0001 L CNN "Manufacturer_Name"
-F 7 "12-22SURSYGC/S530-A2/TR8" H 5350 7750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "12-22SURSYGC/S530-A2/TR8" H 5350 7650 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 5350 7550 50  0001 L CNN "Arrow Price/Stock"
-F 10 "638-1222SURSYGCA2TR8" H 5350 7450 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=638-1222SURSYGCA2TR8" H 5350 7350 50  0001 L CNN "Mouser Price/Stock"
-	1    4500 8150
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Device:R R11
 U 1 1 5F8CC602
@@ -1358,36 +1298,9 @@ Wire Wire Line
 	3400 7700 3400 7800
 Wire Wire Line
 	4600 7700 4600 7800
-$Comp
-L Converter_ACDC:IRM-03-12 PS1
-U 1 1 5F9364C1
-P 3700 1100
-F 0 "PS1" H 3700 1467 50  0000 C CNN
-F 1 "IRM-03-12" H 3700 1376 50  0000 C CNN
-F 2 "" H 3700 750 50  0001 C CNN
-F 3 "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF" H 3700 700 50  0001 C CNN
-	1    3700 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 1000 3300 850 
-Wire Wire Line
-	3300 850  3100 850 
-Connection ~ 3100 850 
-Wire Wire Line
-	3300 1200 3300 1350
-Wire Wire Line
-	3300 1350 3100 1350
-Connection ~ 3100 1350
-Wire Wire Line
-	4100 1200 4100 1300
-Wire Wire Line
-	4100 1300 4300 1300
+Connection ~ 2600 850 
+Connection ~ 2600 1350
 Connection ~ 4300 1300
-Wire Wire Line
-	4100 1000 4100 900 
-Wire Wire Line
-	4100 900  4300 900 
 Connection ~ 4300 900 
 Wire Wire Line
 	3100 6950 3300 6950
@@ -1412,18 +1325,6 @@ Text Label 9450 9400 0    50   ~ 0
 Linea
 Text Label 5950 5700 2    50   ~ 0
 Antenna
-$Comp
-L 1909763-1:1909763-1 J6
-U 1 1 5FA17C3E
-P 6900 6000
-F 0 "J6" H 7188 6040 50  0000 L CNN
-F 1 "UFL Conn" H 7188 5949 50  0000 L CNN
-F 2 "" H 6900 6000 50  0001 L BNN
-F 3 "1909763-1" H 6900 6000 50  0001 L BNN
-F 4 "1" H 6900 6000 50  0001 L BNN "Field4"
-	1    6900 6000
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GNDD #PWR014
 U 1 1 5FA23786
@@ -1456,7 +1357,7 @@ U 1 1 5FA3D626
 P 6400 5900
 F 0 "JP4" H 6400 6164 50  0000 C CNN
 F 1 "Jumper" H 6400 6073 50  0000 C CNN
-F 2 "" H 6400 5900 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6400 5900 50  0001 C CNN
 F 3 "~" H 6400 5900 50  0001 C CNN
 	1    6400 5900
 	1    0    0    -1  
@@ -1488,7 +1389,7 @@ U 1 1 5FA3C0F8
 P 6400 5550
 F 0 "JP3" H 6400 5814 50  0000 C CNN
 F 1 "Jumper" H 6400 5723 50  0000 C CNN
-F 2 "" H 6400 5550 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6400 5550 50  0001 C CNN
 F 3 "~" H 6400 5550 50  0001 C CNN
 	1    6400 5550
 	1    0    0    -1  
@@ -1542,4 +1443,133 @@ Wire Notes Line
 	10100 8800 8700 8800
 Wire Notes Line
 	7750 2350 7750 500 
+$Comp
+L proyect_EESAMR34J18-V1_CT:EESAMR34J18-V1_CT U1
+U 1 1 5F767C93
+P 2000 6650
+F 0 "U1" H 2050 6650 50  0000 R CNN
+F 1 "EESAMR34J18-V1_CT" H 2450 6500 50  0000 R CNN
+F 2 "proyect_EESAMR34:EESAMR34" H 2000 6650 50  0001 L BNN
+F 3 "" H 2000 6650 50  0001 C CNN
+	1    2000 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L proyect_MCP6001T-I_OT:MCP6001T-I_OT IC1
+U 1 1 5F79C962
+P 3550 3500
+F 0 "IC1" H 4150 3350 50  0000 C CNN
+F 1 "MCP6001T-I_OT" H 4150 3250 50  0000 C CNN
+F 2 "proyect_MCP6001T-I_OT:SOT95P270X145-5N" H 4600 3900 50  0001 L CNN
+F 3 "http://docs-emea.rs-online.com/webdocs/0dd1/0900766b80dd189c.pdf" H 4600 3800 50  0001 L CNN
+F 4 "Single 1.8V Op Amp, 1MHz, I temp" H 4600 3700 50  0001 L CNN "Description"
+F 5 "1.45" H 4600 3600 50  0001 L CNN "Height"
+F 6 "Microchip" H 4600 3500 50  0001 L CNN "Manufacturer_Name"
+F 7 "MCP6001T-I/OT" H 4600 3400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "MCP6001T-I/OT" H 4600 3300 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/mcp6001t-iot/microchip-technology" H 4600 3200 50  0001 L CNN "Arrow Price/Stock"
+F 10 "579-MCP6001T-I/OT" H 4600 3100 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP6001T-I-OT?qs=Q%2Fw7XRh99iki9dglS7IqJg%3D%3D" H 4600 3000 50  0001 L CNN "Mouser Price/Stock"
+	1    3550 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L proyect_UFL-Conn:1909763-1 J6
+U 1 1 5F7BE21B
+P 6900 6000
+F 0 "J6" H 7189 6040 50  0000 L CNN
+F 1 "UFL-Conn" H 7189 5949 50  0000 L CNN
+F 2 "proyect_UFL-Conn:TE_1909763-1" H 6900 6000 50  0001 L BNN
+F 3 "1909763-1" H 6900 6000 50  0001 L BNN
+F 4 "1" H 6900 6000 50  0001 L BNN "Field4"
+	1    6900 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0114
+U 1 1 5F89AEDC
+P 9050 9950
+F 0 "#PWR0114" H 9050 9700 50  0001 C CNN
+F 1 "GNDA" H 9055 9777 50  0000 C CNN
+F 2 "" H 9050 9950 50  0001 C CNN
+F 3 "" H 9050 9950 50  0001 C CNN
+	1    9050 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F89C39F
+P 9050 9950
+F 0 "#FLG0101" H 9050 10025 50  0001 C CNN
+F 1 "PWR_FLAG" H 9050 10123 50  0000 C CNN
+F 2 "" H 9050 9950 50  0001 C CNN
+F 3 "~" H 9050 9950 50  0001 C CNN
+	1    9050 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L proyect_12-22_LEDs:12-22SURSYGC_S530-A2_TR8 LED1
+U 1 1 5F8A983B
+P 4500 8150
+F 0 "LED1" H 5000 8415 50  0000 C CNN
+F 1 "12-22/G6R6C-A31/2C" H 5000 8324 50  0000 C CNN
+F 2 "proyect_12-22_LEDs:1222SURSYGCS530A2TR8" H 5350 8250 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/12-22SURSYGC_S530-A2_TR8.pdf" H 5350 8150 50  0001 L CNN
+F 4 "LED Bi-Color Red/Yellow Green 632nm/575nm 3-Pin Chip LED T/R" H 5350 8050 50  0001 L CNN "Description"
+F 5 "2.2" H 5350 7950 50  0001 L CNN "Height"
+F 6 "Everlight" H 5350 7850 50  0001 L CNN "Manufacturer_Name"
+F 7 "12-22SURSYGC/S530-A2/TR8" H 5350 7750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "12-22SURSYGC/S530-A2/TR8" H 5350 7650 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 5350 7550 50  0001 L CNN "Arrow Price/Stock"
+F 10 "638-1222SURSYGCA2TR8" H 5350 7450 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=638-1222SURSYGCA2TR8" H 5350 7350 50  0001 L CNN "Mouser Price/Stock"
+	1    4500 8150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Converter_ACDC:IRM-03-12 PS1
+U 1 1 5F7683F1
+P 3500 1100
+F 0 "PS1" H 3500 1467 50  0000 C CNN
+F 1 "IRM-03-12" H 3500 1376 50  0000 C CNN
+F 2 "proyect_new:Converter_ACDC_MeanWell_IRM-03-xx_THT" H 3500 750 50  0001 C CNN
+F 3 "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF" H 3500 700 50  0001 C CNN
+	1    3500 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1000 4000 1000
+Wire Wire Line
+	4000 1000 4000 900 
+Wire Wire Line
+	4000 900  4300 900 
+Wire Wire Line
+	3900 1200 4000 1200
+Wire Wire Line
+	4000 1200 4000 1300
+Wire Wire Line
+	4000 1300 4300 1300
+Wire Wire Line
+	3100 1000 3000 1000
+Wire Wire Line
+	3000 1000 3000 850 
+Wire Wire Line
+	2600 850  3000 850 
+Wire Wire Line
+	3000 1350 3000 1200
+Wire Wire Line
+	3000 1200 3100 1200
+Wire Wire Line
+	2600 1350 3000 1350
+$Comp
+L proyect_new:HL2-1CH-12S K?
+U 1 1 5F7D0ED4
+P 6200 7700
+F 0 "K?" V 6767 7700 50  0000 C CNN
+F 1 "HL2-1CH-12S" V 6676 7700 50  0000 C CNN
+F 2 "Relay_THT:HL2-1CH-12S" H 6650 7650 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 6200 7700 50  0001 C CNN
+	1    6200 7700
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
