@@ -1510,7 +1510,7 @@ U 1 1 5F832713
 P 2900 950
 F 0 "PS1" H 3400 1215 50  0000 C CNN
 F 1 "IRM-03-12" H 3400 1124 50  0000 C CNN
-F 2 "proyect_IRM-03-12:IRM0312" H 3750 1050 50  0001 L CNN
+F 2 "proyect_new:IRM0312" H 3750 1050 50  0001 L CNN
 F 3 "https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/IRM-03/IRM-03-spec.pdf" H 3750 950 50  0001 L CNN
 F 4 "Mean Well 3W Encapsulated Switch Mode Power Supply, 0  250mA, 12V dc" H 3750 850 50  0001 L CNN "Description"
 F 5 "15" H 3750 750 50  0001 L CNN "Height"
