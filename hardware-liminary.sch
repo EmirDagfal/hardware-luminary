@@ -1492,4 +1492,23 @@ F 3 "" H 2000 6650 50  0001 C CNN
 	1    2000 6650
 	1    0    0    -1  
 $EndComp
+$Comp
+L proyect_MCP6001T-I_OT:MCP6001T-I_OT IC1
+U 1 1 5F79C962
+P 3550 3500
+F 0 "IC1" H 4150 4281 50  0000 C CNN
+F 1 "MCP6001T-I_OT" H 4150 4190 50  0000 C CNN
+F 2 "proyect_MCP6001T-I_OT:SOT95P270X145-5N" H 4600 3900 50  0001 L CNN
+F 3 "http://docs-emea.rs-online.com/webdocs/0dd1/0900766b80dd189c.pdf" H 4600 3800 50  0001 L CNN
+F 4 "Single 1.8V Op Amp, 1MHz, I temp" H 4600 3700 50  0001 L CNN "Description"
+F 5 "1.45" H 4600 3600 50  0001 L CNN "Height"
+F 6 "Microchip" H 4600 3500 50  0001 L CNN "Manufacturer_Name"
+F 7 "MCP6001T-I/OT" H 4600 3400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "MCP6001T-I/OT" H 4600 3300 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/mcp6001t-iot/microchip-technology" H 4600 3200 50  0001 L CNN "Arrow Price/Stock"
+F 10 "579-MCP6001T-I/OT" H 4600 3100 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP6001T-I-OT?qs=Q%2Fw7XRh99iki9dglS7IqJg%3D%3D" H 4600 3000 50  0001 L CNN "Mouser Price/Stock"
+	1    3550 3500
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
