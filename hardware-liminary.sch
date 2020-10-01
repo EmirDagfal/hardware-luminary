@@ -1578,4 +1578,23 @@ F 3 "~" H 9850 9400 50  0001 C CNN
 	1    9850 9400
 	-1   0    0    1   
 $EndComp
+$Comp
+L proyect_12-22_LEDs:12-22SURSYGC_S530-A2_TR8 LED1
+U 1 1 5F8A983B
+P 4500 8150
+F 0 "LED1" H 5000 8415 50  0000 C CNN
+F 1 "12-22SURSYGC_S530-A2_TR8" H 5000 8324 50  0000 C CNN
+F 2 "proyect_12-22_LEDs:1222SURSYGCS530A2TR8" H 5350 8250 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/12-22SURSYGC_S530-A2_TR8.pdf" H 5350 8150 50  0001 L CNN
+F 4 "LED Bi-Color Red/Yellow Green 632nm/575nm 3-Pin Chip LED T/R" H 5350 8050 50  0001 L CNN "Description"
+F 5 "2.2" H 5350 7950 50  0001 L CNN "Height"
+F 6 "Everlight" H 5350 7850 50  0001 L CNN "Manufacturer_Name"
+F 7 "12-22SURSYGC/S530-A2/TR8" H 5350 7750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "12-22SURSYGC/S530-A2/TR8" H 5350 7650 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 5350 7550 50  0001 L CNN "Arrow Price/Stock"
+F 10 "638-1222SURSYGCA2TR8" H 5350 7450 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=638-1222SURSYGCA2TR8" H 5350 7350 50  0001 L CNN "Mouser Price/Stock"
+	1    4500 8150
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
