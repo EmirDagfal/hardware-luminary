@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:Varistor RV1
 U 1 1 5F736B9D
-P 2450 1100
-F 0 "RV1" H 2329 1054 50  0000 R CNN
-F 1 "Varistor" H 2329 1145 50  0000 R CNN
-F 2 "Varistor:RV_Disc_D15.5mm_W3.9mm_P7.5mm" V 2380 1100 50  0001 C CNN
-F 3 "~" H 2450 1100 50  0001 C CNN
-	1    2450 1100
+P 2600 1100
+F 0 "RV1" H 2479 1054 50  0000 R CNN
+F 1 "Varistor" H 2479 1145 50  0000 R CNN
+F 2 "Varistor:RV_Disc_D15.5mm_W3.9mm_P7.5mm" V 2530 1100 50  0001 C CNN
+F 3 "~" H 2600 1100 50  0001 C CNN
+	1    2600 1100
 	1    0    0    1   
 $EndComp
 $Comp
@@ -274,18 +274,18 @@ Wire Wire Line
 	3300 2000 3400 2000
 Wire Wire Line
 	3400 2000 3400 2050
-Text Label 2050 850  2    50   ~ 0
+Text Label 2200 850  2    50   ~ 0
 Linea
-Text Label 2050 1350 2    50   ~ 0
+Text Label 2200 1350 2    50   ~ 0
 Neutro
 Wire Wire Line
-	2050 850  2450 850 
+	2200 850  2600 850 
 Wire Wire Line
-	2450 850  2450 950 
+	2600 850  2600 950 
 Wire Wire Line
-	2050 1350 2450 1350
+	2200 1350 2600 1350
 Wire Wire Line
-	2450 1350 2450 1250
+	2600 1350 2600 1250
 $Comp
 L Device:R R7
 U 1 1 5F768523
@@ -1096,7 +1096,7 @@ L Connector_Generic:Conn_02x05_Odd_Even J4
 U 1 1 5FA24E5F
 P 1650 9700
 F 0 "J4" H 1700 10117 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 1700 10026 50  0000 C CNN
+F 1 "SWD" H 1700 10026 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 1650 9700 50  0001 C CNN
 F 3 "~" H 1650 9700 50  0001 C CNN
 	1    1650 9700
@@ -1240,7 +1240,7 @@ L Connector_Generic:Conn_01x02 J5
 U 1 1 5F83DE54
 P 1800 10400
 F 0 "J5" H 1718 10617 50  0000 C CNN
-F 1 "Conn_01x02" H 1718 10526 50  0000 C CNN
+F 1 "Console" H 1718 10526 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1800 10400 50  0001 C CNN
 F 3 "~" H 1800 10400 50  0001 C CNN
 	1    1800 10400
@@ -1309,17 +1309,9 @@ Wire Wire Line
 	3400 7700 3400 7800
 Wire Wire Line
 	4600 7700 4600 7800
-Wire Wire Line
-	2650 850  2450 850 
-Connection ~ 2450 850 
-Wire Wire Line
-	2650 1350 2450 1350
-Connection ~ 2450 1350
-Wire Wire Line
-	4100 1300 4300 1300
+Connection ~ 2600 850 
+Connection ~ 2600 1350
 Connection ~ 4300 1300
-Wire Wire Line
-	4100 900  4300 900 
 Connection ~ 4300 900 
 Wire Wire Line
 	3100 6950 3300 6950
@@ -1466,8 +1458,8 @@ $Comp
 L proyect_EESAMR34J18-V1_CT:EESAMR34J18-V1_CT U1
 U 1 1 5F767C93
 P 2000 6650
-F 0 "U1" H 1057 6646 50  0000 R CNN
-F 1 "EESAMR34J18-V1_CT" H 1057 6555 50  0000 R CNN
+F 0 "U1" H 2050 6650 50  0000 R CNN
+F 1 "EESAMR34J18-V1_CT" H 2450 6500 50  0000 R CNN
 F 2 "proyect_EESAMR34:EESAMR34" H 2000 6650 50  0001 L BNN
 F 3 "" H 2000 6650 50  0001 C CNN
 	1    2000 6650
@@ -1477,8 +1469,8 @@ $Comp
 L proyect_MCP6001T-I_OT:MCP6001T-I_OT IC1
 U 1 1 5F79C962
 P 3550 3500
-F 0 "IC1" H 4150 4281 50  0000 C CNN
-F 1 "MCP6001T-I_OT" H 4150 4190 50  0000 C CNN
+F 0 "IC1" H 4150 3350 50  0000 C CNN
+F 1 "MCP6001T-I_OT" H 4150 3250 50  0000 C CNN
 F 2 "proyect_MCP6001T-I_OT:SOT95P270X145-5N" H 4600 3900 50  0001 L CNN
 F 3 "http://docs-emea.rs-online.com/webdocs/0dd1/0900766b80dd189c.pdf" H 4600 3800 50  0001 L CNN
 F 4 "Single 1.8V Op Amp, 1MHz, I temp" H 4600 3700 50  0001 L CNN "Description"
@@ -1505,45 +1497,6 @@ F 4 "1" H 6900 6000 50  0001 L BNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L proyect_IRM-03-12:IRM-03-12 PS1
-U 1 1 5F832713
-P 2900 950
-F 0 "PS1" H 3400 1215 50  0000 C CNN
-F 1 "IRM-03-12" H 3400 1124 50  0000 C CNN
-F 2 "proyect_new:IRM0312" H 3750 1050 50  0001 L CNN
-F 3 "https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/IRM-03/IRM-03-spec.pdf" H 3750 950 50  0001 L CNN
-F 4 "Mean Well 3W Encapsulated Switch Mode Power Supply, 0  250mA, 12V dc" H 3750 850 50  0001 L CNN "Description"
-F 5 "15" H 3750 750 50  0001 L CNN "Height"
-F 6 "Mean Well" H 3750 650 50  0001 L CNN "Manufacturer_Name"
-F 7 "IRM-03-12" H 3750 550 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "IRM-03-12" H 3750 450 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/irm-03-12/mean-well-enterprises" H 3750 350 50  0001 L CNN "Arrow Price/Stock"
-F 10 "709-IRM03-12" H 3750 250 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/MEAN-WELL/IRM-03-12?qs=NKmfXavxMawjMKY4aLDNfg%3D%3D" H 3750 150 50  0001 L CNN "Mouser Price/Stock"
-	1    2900 950 
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3900 1050
-NoConn ~ 3900 1150
-Wire Wire Line
-	2650 850  2650 950 
-Wire Wire Line
-	2650 950  2900 950 
-Wire Wire Line
-	2650 1350 2650 1050
-Wire Wire Line
-	2650 1050 2900 1050
-Wire Wire Line
-	2900 1250 2900 1400
-Wire Wire Line
-	2900 1400 4100 1400
-Wire Wire Line
-	4100 1400 4100 1300
-Wire Wire Line
-	3900 950  4100 950 
-Wire Wire Line
-	4100 950  4100 900 
-$Comp
 L power:GNDA #PWR0114
 U 1 1 5F89AEDC
 P 9050 9950
@@ -1565,25 +1518,12 @@ F 3 "~" H 9050 9950 50  0001 C CNN
 	1    9050 9950
 	1    0    0    -1  
 $EndComp
-Text Label 9850 9400 0    50   ~ 0
-+12v
-$Comp
-L power:PWR_FLAG #FLG0105
-U 1 1 5F89CD25
-P 9850 9400
-F 0 "#FLG0105" H 9850 9475 50  0001 C CNN
-F 1 "PWR_FLAG" H 9850 9573 50  0000 C CNN
-F 2 "" H 9850 9400 50  0001 C CNN
-F 3 "~" H 9850 9400 50  0001 C CNN
-	1    9850 9400
-	-1   0    0    1   
-$EndComp
 $Comp
 L proyect_12-22_LEDs:12-22SURSYGC_S530-A2_TR8 LED1
 U 1 1 5F8A983B
 P 4500 8150
 F 0 "LED1" H 5000 8415 50  0000 C CNN
-F 1 "12-22SURSYGC_S530-A2_TR8" H 5000 8324 50  0000 C CNN
+F 1 "12-22/G6R6C-A31/2C" H 5000 8324 50  0000 C CNN
 F 2 "proyect_12-22_LEDs:1222SURSYGCS530A2TR8" H 5350 8250 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/12-22SURSYGC_S530-A2_TR8.pdf" H 5350 8150 50  0001 L CNN
 F 4 "LED Bi-Color Red/Yellow Green 632nm/575nm 3-Pin Chip LED T/R" H 5350 8050 50  0001 L CNN "Description"
@@ -1597,4 +1537,39 @@ F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=638-1222SURSYGCA2TR8" H 
 	1    4500 8150
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Converter_ACDC:IRM-03-12 PS1
+U 1 1 5F7683F1
+P 3500 1100
+F 0 "PS1" H 3500 1467 50  0000 C CNN
+F 1 "IRM-03-12" H 3500 1376 50  0000 C CNN
+F 2 "proyect_new:Converter_ACDC_MeanWell_IRM-03-xx_THT" H 3500 750 50  0001 C CNN
+F 3 "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF" H 3500 700 50  0001 C CNN
+	1    3500 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1000 4000 1000
+Wire Wire Line
+	4000 1000 4000 900 
+Wire Wire Line
+	4000 900  4300 900 
+Wire Wire Line
+	3900 1200 4000 1200
+Wire Wire Line
+	4000 1200 4000 1300
+Wire Wire Line
+	4000 1300 4300 1300
+Wire Wire Line
+	3100 1000 3000 1000
+Wire Wire Line
+	3000 1000 3000 850 
+Wire Wire Line
+	2600 850  3000 850 
+Wire Wire Line
+	3000 1350 3000 1200
+Wire Wire Line
+	3000 1200 3100 1200
+Wire Wire Line
+	2600 1350 3000 1350
 $EndSCHEMATC
