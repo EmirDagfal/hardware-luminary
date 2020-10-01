@@ -1511,4 +1511,16 @@ F 11 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP6001T-I-OT?
 	1    3550 3500
 	-1   0    0    -1  
 $EndComp
+$Comp
+L proyect_UFL-Conn:1909763-1 J6
+U 1 1 5F7BE21B
+P 6900 6000
+F 0 "J6" H 7189 6040 50  0000 L CNN
+F 1 "UFL-Conn" H 7189 5949 50  0000 L CNN
+F 2 "proyect_UFL-Conn:TE_1909763-1" H 6900 6000 50  0001 L BNN
+F 3 "1909763-1" H 6900 6000 50  0001 L BNN
+F 4 "1" H 6900 6000 50  0001 L BNN "Field4"
+	1    6900 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
