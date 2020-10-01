@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:Varistor RV1
 U 1 1 5F736B9D
-P 3100 1100
-F 0 "RV1" H 2979 1054 50  0000 R CNN
-F 1 "Varistor" H 2979 1145 50  0000 R CNN
-F 2 "Varistor:RV_Disc_D15.5mm_W3.9mm_P7.5mm" V 3030 1100 50  0001 C CNN
-F 3 "~" H 3100 1100 50  0001 C CNN
-	1    3100 1100
+P 2450 1100
+F 0 "RV1" H 2329 1054 50  0000 R CNN
+F 1 "Varistor" H 2329 1145 50  0000 R CNN
+F 2 "Varistor:RV_Disc_D15.5mm_W3.9mm_P7.5mm" V 2380 1100 50  0001 C CNN
+F 3 "~" H 2450 1100 50  0001 C CNN
+	1    2450 1100
 	1    0    0    1   
 $EndComp
 $Comp
@@ -274,18 +274,18 @@ Wire Wire Line
 	3300 2000 3400 2000
 Wire Wire Line
 	3400 2000 3400 2050
-Text Label 2700 850  2    50   ~ 0
+Text Label 2050 850  2    50   ~ 0
 Linea
-Text Label 2700 1350 2    50   ~ 0
+Text Label 2050 1350 2    50   ~ 0
 Neutro
 Wire Wire Line
-	2700 850  3100 850 
+	2050 850  2450 850 
 Wire Wire Line
-	3100 850  3100 950 
+	2450 850  2450 950 
 Wire Wire Line
-	2700 1350 3100 1350
+	2050 1350 2450 1350
 Wire Wire Line
-	3100 1350 3100 1250
+	2450 1350 2450 1250
 $Comp
 L Device:R R7
 U 1 1 5F768523
@@ -1309,34 +1309,15 @@ Wire Wire Line
 	3400 7700 3400 7800
 Wire Wire Line
 	4600 7700 4600 7800
-$Comp
-L Converter_ACDC:IRM-03-12 PS1
-U 1 1 5F9364C1
-P 3700 1100
-F 0 "PS1" H 3700 1467 50  0000 C CNN
-F 1 "IRM-03-12" H 3700 1376 50  0000 C CNN
-F 2 "" H 3700 750 50  0001 C CNN
-F 3 "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF" H 3700 700 50  0001 C CNN
-	1    3700 1100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3300 1000 3300 850 
+	2650 850  2450 850 
+Connection ~ 2450 850 
 Wire Wire Line
-	3300 850  3100 850 
-Connection ~ 3100 850 
-Wire Wire Line
-	3300 1200 3300 1350
-Wire Wire Line
-	3300 1350 3100 1350
-Connection ~ 3100 1350
-Wire Wire Line
-	4100 1200 4100 1300
+	2650 1350 2450 1350
+Connection ~ 2450 1350
 Wire Wire Line
 	4100 1300 4300 1300
 Connection ~ 4300 1300
-Wire Wire Line
-	4100 1000 4100 900 
 Wire Wire Line
 	4100 900  4300 900 
 Connection ~ 4300 900 
@@ -1522,5 +1503,79 @@ F 3 "1909763-1" H 6900 6000 50  0001 L BNN
 F 4 "1" H 6900 6000 50  0001 L BNN "Field4"
 	1    6900 6000
 	1    0    0    -1  
+$EndComp
+$Comp
+L proyect_IRM-03-12:IRM-03-12 PS1
+U 1 1 5F832713
+P 2900 950
+F 0 "PS1" H 3400 1215 50  0000 C CNN
+F 1 "IRM-03-12" H 3400 1124 50  0000 C CNN
+F 2 "proyect_IRM-03-12:IRM0312" H 3750 1050 50  0001 L CNN
+F 3 "https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/IRM-03/IRM-03-spec.pdf" H 3750 950 50  0001 L CNN
+F 4 "Mean Well 3W Encapsulated Switch Mode Power Supply, 0  250mA, 12V dc" H 3750 850 50  0001 L CNN "Description"
+F 5 "15" H 3750 750 50  0001 L CNN "Height"
+F 6 "Mean Well" H 3750 650 50  0001 L CNN "Manufacturer_Name"
+F 7 "IRM-03-12" H 3750 550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "IRM-03-12" H 3750 450 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/irm-03-12/mean-well-enterprises" H 3750 350 50  0001 L CNN "Arrow Price/Stock"
+F 10 "709-IRM03-12" H 3750 250 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/MEAN-WELL/IRM-03-12?qs=NKmfXavxMawjMKY4aLDNfg%3D%3D" H 3750 150 50  0001 L CNN "Mouser Price/Stock"
+	1    2900 950 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3900 1050
+NoConn ~ 3900 1150
+Wire Wire Line
+	2650 850  2650 950 
+Wire Wire Line
+	2650 950  2900 950 
+Wire Wire Line
+	2650 1350 2650 1050
+Wire Wire Line
+	2650 1050 2900 1050
+Wire Wire Line
+	2900 1250 2900 1400
+Wire Wire Line
+	2900 1400 4100 1400
+Wire Wire Line
+	4100 1400 4100 1300
+Wire Wire Line
+	3900 950  4100 950 
+Wire Wire Line
+	4100 950  4100 900 
+$Comp
+L power:GNDA #PWR0114
+U 1 1 5F89AEDC
+P 9050 9950
+F 0 "#PWR0114" H 9050 9700 50  0001 C CNN
+F 1 "GNDA" H 9055 9777 50  0000 C CNN
+F 2 "" H 9050 9950 50  0001 C CNN
+F 3 "" H 9050 9950 50  0001 C CNN
+	1    9050 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F89C39F
+P 9050 9950
+F 0 "#FLG0101" H 9050 10025 50  0001 C CNN
+F 1 "PWR_FLAG" H 9050 10123 50  0000 C CNN
+F 2 "" H 9050 9950 50  0001 C CNN
+F 3 "~" H 9050 9950 50  0001 C CNN
+	1    9050 9950
+	1    0    0    -1  
+$EndComp
+Text Label 9850 9400 0    50   ~ 0
++12v
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5F89CD25
+P 9850 9400
+F 0 "#FLG0105" H 9850 9475 50  0001 C CNN
+F 1 "PWR_FLAG" H 9850 9573 50  0000 C CNN
+F 2 "" H 9850 9400 50  0001 C CNN
+F 3 "~" H 9850 9400 50  0001 C CNN
+	1    9850 9400
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

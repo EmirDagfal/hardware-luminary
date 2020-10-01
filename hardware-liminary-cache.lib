@@ -101,38 +101,6 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Converter_ACDC_IRM-03-12
-#
-DEF Converter_ACDC_IRM-03-12 PS 0 20 Y Y 1 F N
-F0 "PS" 0 250 50 H V C CNN
-F1 "Converter_ACDC_IRM-03-12" 0 -250 50 H V C CNN
-F2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_THT" 0 -350 50 H I C CNN
-F3 "" 0 -400 50 H I C CNN
-ALIAS IRM-03-5 IRM-03-12 IRM-03-15 IRM-03-24
-$FPLIST
- Converter*ACDC*MeanWell*IRM*03*THT*
-$ENDFPLIST
-DRAW
-A -185 38 28 -1525 -275 0 1 0 N -210 25 -160 25
-A -135 11 29 292 1508 0 1 0 N -110 25 -160 25
-S -300 200 300 -200 0 1 10 f
-P 2 0 1 0 -210 -25 -110 -25 N
-P 2 0 1 0 0 -100 0 -150 N
-P 2 0 1 0 0 0 0 -50 N
-P 2 0 1 0 0 100 0 50 N
-P 2 0 1 0 0 200 0 150 N
-P 2 0 1 0 110 -25 210 -25 N
-P 2 0 1 0 110 25 130 25 N
-P 2 0 1 0 150 25 170 25 N
-P 2 0 1 0 190 25 210 25 N
-X AC/L 1 -400 100 100 R 50 50 1 1 W
-X -Vo 14 400 -100 100 L 50 50 1 1 w
-X +Vo 16 400 100 100 L 50 50 1 1 w
-X AC/N 3 -400 -100 100 R 50 50 1 1 W
-X 5 NC -300 0 100 R 50 50 1 1 N N
-ENDDRAW
-ENDDEF
-#
 # Device_Antenna
 #
 DEF Device_Antenna AE 0 40 N N 1 F N
@@ -533,6 +501,33 @@ X GND4 6 -900 -300 100 R 40 40 0 0 W
 X GND5 7 -900 -400 100 R 40 40 0 0 W
 X GND6 8 -900 -500 100 R 40 40 0 0 W
 X GND7 9 -900 -600 100 R 40 40 0 0 W
+ENDDRAW
+ENDDEF
+#
+# proyect_IRM-03-12_IRM-03-12
+#
+DEF proyect_IRM-03-12_IRM-03-12 PS 0 30 Y Y 1 F N
+F0 "PS" 850 300 50 H V L CNN
+F1 "proyect_IRM-03-12_IRM-03-12" 850 200 50 H V L CNN
+F2 "IRM0312" 850 100 50 H I L CNN
+F3 "https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/IRM-03/IRM-03-spec.pdf" 850 0 50 H I L CNN
+F4 "Mean Well 3W Encapsulated Switch Mode Power Supply, 0  250mA, 12V dc" 850 -100 50 H I L CNN "Description"
+F5 "15" 850 -200 50 H I L CNN "Height"
+F6 "Mean Well" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "IRM-03-12" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "IRM-03-12" 850 -500 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/irm-03-12/mean-well-enterprises" 850 -600 50 H I L CNN "Arrow Price/Stock"
+F10 "709-IRM03-12" 850 -700 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/MEAN-WELL/IRM-03-12?qs=NKmfXavxMawjMKY4aLDNfg%3D%3D" 850 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
+X AC/L 1 0 0 200 R 50 50 0 0 P
+X AC/N 2 0 -100 200 R 50 50 0 0 P
+X NC 3 0 -200 200 R 50 50 0 0 N
+X -V 4 0 -300 200 R 50 50 0 0 P
+X +V 5 1000 0 200 L 50 50 0 0 P
+X 6 6 1000 -100 200 L 50 50 0 0 P
+X 7 7 1000 -200 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #

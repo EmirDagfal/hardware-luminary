@@ -2,4 +2,5 @@
   (lib (name proyect_EESAMR34)(type KiCad)(uri ${KIPRJMOD}/components/EESAMR34/lib)(options "")(descr ""))
   (lib (name proyect_MCP6001T-I_OT)(type KiCad)(uri ${KIPRJMOD}/components/OpAmp/LIB_MCP6001T-I_OT/MCP6001T-I_OT/KiCad)(options "")(descr ""))
   (lib (name proyect_UFL-Conn)(type KiCad)(uri "${KIPRJMOD}/components/UFL Conn/1909763-1")(options "")(descr ""))
+  (lib (name proyect_IRM-03-12)(type Legacy)(uri ${KIPRJMOD}/components/PowerSupply/LIB_IRM-03-12/IRM-03-12/KiCad/IRM-03-12.mod)(options "")(descr ""))
 )
