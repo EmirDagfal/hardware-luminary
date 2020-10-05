@@ -34,17 +34,17 @@ Wire Wire Line
 	4900 4700 5000 4700
 Wire Wire Line
 	5000 4700 5000 4800
-Text Label 6200 1750 2    50   ~ 0
+Text Label 6350 1600 2    50   ~ 0
 +3.3v
-Text Label 1600 1650 0    50   ~ 0
+Text Label 2000 1600 0    50   ~ 0
 Neutro
-Text Label 1600 1550 0    50   ~ 0
+Text Label 2000 1500 0    50   ~ 0
 Linea
-Text Label 1600 1750 0    50   ~ 0
+Text Label 2000 1700 0    50   ~ 0
 Carga
-Text Label 6200 1450 2    50   ~ 0
+Text Label 6350 1300 2    50   ~ 0
 OpenC
-Text Label 6200 1900 2    50   ~ 0
+Text Label 6350 1750 2    50   ~ 0
 PIR
 $Comp
 L Diode:1N4007 D?
@@ -100,19 +100,6 @@ Linea
 Wire Wire Line
 	1850 6150 2250 6150
 NoConn ~ 2250 6350
-$Comp
-L Jumper:Jumper_2_Open JP?
-U 1 1 5F93137C
-P 3550 5900
-AR Path="/5F93137C" Ref="JP?"  Part="1" 
-AR Path="/5F91F411/5F93137C" Ref="JP4"  Part="1" 
-F 0 "JP4" H 3550 6135 50  0000 C CNN
-F 1 "Jumper_2_Open" H 3550 6044 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3550 5900 50  0001 C CNN
-F 3 "~" H 3550 5900 50  0001 C CNN
-	1    3550 5900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2900 6650 2900 6950
 Wire Wire Line
@@ -134,7 +121,7 @@ Wire Wire Line
 	2900 6950 2900 7050
 Connection ~ 2900 6950
 Text Notes 650  3050 0    118  ~ 24
-Power Module
+Power Supply
 Text Notes 650  5700 0    118  ~ 24
 Relay & Energy Module
 $Comp
@@ -254,15 +241,11 @@ Wire Wire Line
 	1700 4050 1700 3950
 Connection ~ 1700 4050
 Wire Wire Line
-	1300 4050 1700 4050
-Wire Wire Line
 	1700 3550 1700 3650
 Connection ~ 1700 3550
-Wire Wire Line
-	1300 3550 1700 3550
-Text Label 1300 4050 2    50   ~ 0
+Text Label 850  4050 2    50   ~ 0
 Neutro
-Text Label 1300 3550 2    50   ~ 0
+Text Label 850  3550 2    50   ~ 0
 Linea
 $Comp
 L Device:Jumper JP?
@@ -385,26 +368,26 @@ F 3 "~" H 1700 3800 50  0001 C CNN
 	1    1700 3800
 	1    0    0    1   
 $EndComp
-Text HLabel 6400 1750 2    50   Output ~ 0
+Text HLabel 6550 1600 2    50   Output ~ 0
 3.3v
-Text HLabel 6400 1600 2    50   UnSpc ~ 0
+Text HLabel 6550 1450 2    50   UnSpc ~ 0
 GND
-Text HLabel 6400 1450 2    50   Input ~ 0
+Text HLabel 6550 1300 2    50   Input ~ 0
 OpenC
-Text HLabel 6400 1900 2    50   Output ~ 0
+Text HLabel 6550 1750 2    50   Output ~ 0
 PIR
-Text HLabel 6400 2050 2    50   Input ~ 0
+Text HLabel 6550 1900 2    50   Input ~ 0
 Relay
-Text Label 6200 2050 2    50   ~ 0
+Text Label 6350 1900 2    50   ~ 0
 Relay
 Wire Wire Line
-	6200 1750 6400 1750
+	6350 1600 6550 1600
 Wire Wire Line
-	6400 1450 6200 1450
+	6550 1300 6350 1300
 Wire Wire Line
-	6200 1900 6400 1900
+	6350 1750 6550 1750
 Wire Wire Line
-	6200 2050 6400 2050
+	6350 1900 6550 1900
 $Comp
 L power:GNDREF #PWR029
 U 1 1 5F94415B
@@ -441,12 +424,12 @@ $EndComp
 $Comp
 L power:GNDREF #PWR028
 U 1 1 5F946874
-P 5600 1650
-F 0 "#PWR028" H 5600 1400 50  0001 C CNN
-F 1 "GNDREF" H 5605 1477 50  0000 C CNN
-F 2 "" H 5600 1650 50  0001 C CNN
-F 3 "" H 5600 1650 50  0001 C CNN
-	1    5600 1650
+P 5750 1500
+F 0 "#PWR028" H 5750 1250 50  0001 C CNN
+F 1 "GNDREF" H 5755 1327 50  0000 C CNN
+F 2 "" H 5750 1500 50  0001 C CNN
+F 3 "" H 5750 1500 50  0001 C CNN
+	1    5750 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -505,48 +488,48 @@ Wire Notes Line
 $Comp
 L Connector_Generic:Conn_01x07 J6
 U 1 1 5F95513B
-P 1150 1850
-F 0 "J6" H 1068 2367 50  0000 C CNN
-F 1 "Nema 7-Pin" H 1068 2276 50  0000 C CNN
-F 2 "proyect_new:Nema_7-pin" H 1150 1850 50  0001 C CNN
-F 3 "~" H 1150 1850 50  0001 C CNN
-	1    1150 1850
+P 1550 1800
+F 0 "J6" H 1468 2317 50  0000 C CNN
+F 1 "Nema 7-Pin" H 1468 2226 50  0000 C CNN
+F 2 "proyect_new:Nema_7-pin" H 1550 1800 50  0001 C CNN
+F 3 "~" H 1550 1800 50  0001 C CNN
+	1    1550 1800
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 1550 1600 1550
+	1750 1500 2000 1500
 Wire Wire Line
-	1350 1650 1600 1650
+	1750 1600 2000 1600
 Wire Wire Line
-	1350 1750 1600 1750
-Text Label 1600 2050 0    50   ~ 0
+	1750 1700 2000 1700
+Text Label 2000 2000 0    50   ~ 0
 +3.3v
 $Comp
 L power:GNDREF #PWR025
 U 1 1 5F95AA84
-P 2000 1950
-F 0 "#PWR025" H 2000 1700 50  0001 C CNN
-F 1 "GNDREF" H 2005 1777 50  0000 C CNN
-F 2 "" H 2000 1950 50  0001 C CNN
-F 3 "" H 2000 1950 50  0001 C CNN
-	1    2000 1950
+P 2400 1900
+F 0 "#PWR025" H 2400 1650 50  0001 C CNN
+F 1 "GNDREF" H 2405 1727 50  0000 C CNN
+F 2 "" H 2400 1900 50  0001 C CNN
+F 3 "" H 2400 1900 50  0001 C CNN
+	1    2400 1900
 	1    0    0    -1  
 $EndComp
-Text Label 1600 1850 0    50   ~ 0
+Text Label 2000 1800 0    50   ~ 0
 OpenC
-Text Label 1600 2150 0    50   ~ 0
+Text Label 2000 2100 0    50   ~ 0
 PIR
 Wire Wire Line
-	1350 1850 1600 1850
+	1750 1800 2000 1800
 Wire Wire Line
-	1350 1950 2000 1950
+	1750 1900 2400 1900
 Wire Wire Line
-	1350 2050 1600 2050
+	1750 2000 2000 2000
 Wire Wire Line
-	1350 2150 1600 2150
-Text Notes 1000 1100 0    118  ~ 24
+	1750 2100 2000 2100
+Text Notes 650  850  0    118  ~ 24
 Nema 7-Pin Connector
-Text Notes 5250 1050 0    118  ~ 24
+Text Notes 5000 850  0    118  ~ 24
 Top board Connector
 Wire Wire Line
 	6050 3600 6200 3600
@@ -601,19 +584,6 @@ Text Label 4300 6700 2    50   ~ 0
 Neutro
 Wire Wire Line
 	3750 5900 3900 5900
-$Comp
-L Jumper:Jumper_2_Open JP?
-U 1 1 5F7A8CEE
-P 3550 6250
-AR Path="/5F7A8CEE" Ref="JP?"  Part="1" 
-AR Path="/5F91F411/5F7A8CEE" Ref="JP5"  Part="1" 
-F 0 "JP5" H 3550 6485 50  0000 C CNN
-F 1 "Jumper_2_Open" H 3550 6394 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3550 6250 50  0001 C CNN
-F 3 "~" H 3550 6250 50  0001 C CNN
-	1    3550 6250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3150 6250 3350 6250
 Connection ~ 3150 6250
@@ -763,20 +733,87 @@ Wire Wire Line
 	6200 6950 6200 7000
 Wire Wire Line
 	6450 6400 5400 6400
-Text Label 6200 2350 2    50   ~ 0
+Text Label 6350 2200 2    50   ~ 0
 Energy_Pulses
-Text Label 6200 2200 2    50   ~ 0
+Text Label 6350 2050 2    50   ~ 0
 Enery_Tx
-Text HLabel 6400 2200 2    50   Output ~ 0
+Text HLabel 6550 2050 2    50   Output ~ 0
 Enery_Tx
-Text HLabel 6400 2350 2    50   Output ~ 0
+Text HLabel 6550 2200 2    50   Output ~ 0
 Enery_Pulses
 Wire Wire Line
-	6200 2200 6400 2200
+	6350 2050 6550 2050
 Wire Wire Line
-	6200 2350 6400 2350
+	6350 2200 6550 2200
 Wire Wire Line
-	6400 1600 5600 1600
+	6550 1450 5750 1450
 Wire Wire Line
-	5600 1600 5600 1650
+	5750 1450 5750 1500
+Wire Notes Line
+	500  550  500  2650
+Wire Notes Line
+	500  2650 3500 2650
+Wire Notes Line
+	3500 2650 3500 550 
+Wire Notes Line
+	3500 550  500  550 
+Wire Notes Line
+	4900 550  4900 2650
+Wire Notes Line
+	4900 2650 7750 2650
+Wire Notes Line
+	7750 2650 7750 550 
+Wire Notes Line
+	7750 550  4900 550 
+$Comp
+L Jumper:Jumper_2_Open JP?
+U 1 1 5F7A8CEE
+P 3550 6250
+AR Path="/5F7A8CEE" Ref="JP?"  Part="1" 
+AR Path="/5F91F411/5F7A8CEE" Ref="JP5"  Part="1" 
+F 0 "JP5" H 3550 6485 50  0000 C CNN
+F 1 "Jumper_2_Open" H 3550 6394 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3550 6250 50  0001 C CNN
+F 3 "~" H 3550 6250 50  0001 C CNN
+	1    3550 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP?
+U 1 1 5F93137C
+P 3550 5900
+AR Path="/5F93137C" Ref="JP?"  Part="1" 
+AR Path="/5F91F411/5F93137C" Ref="JP4"  Part="1" 
+F 0 "JP4" H 3550 6135 50  0000 C CNN
+F 1 "Jumper_2_Open" H 3550 6044 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3550 5900 50  0001 C CNN
+F 3 "~" H 3550 5900 50  0001 C CNN
+	1    3550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:SPARK_GAP E1
+U 1 1 5F8EA820
+P 1150 3800
+F 0 "E1" V 1100 3650 50  0000 L CNN
+F 1 "SPARK_GAP" V 1200 3350 50  0000 L CNN
+F 2 "" H 1150 3730 50  0001 C CNN
+F 3 "~" V 1150 3800 50  0001 C CNN
+	1    1150 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  3550 1150 3550
+Wire Wire Line
+	850  4050 1150 4050
+Wire Wire Line
+	1150 4000 1150 4050
+Connection ~ 1150 4050
+Wire Wire Line
+	1150 4050 1700 4050
+Wire Wire Line
+	1150 3600 1150 3550
+Connection ~ 1150 3550
+Wire Wire Line
+	1150 3550 1700 3550
 $EndSCHEMATC
