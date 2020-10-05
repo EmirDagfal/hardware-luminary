@@ -463,23 +463,16 @@ Wire Wire Line
 $Comp
 L power:GNDD #PWR?
 U 1 1 5F8D480F
-P 3050 6100
+P 3150 6150
 AR Path="/5F8D480F" Ref="#PWR?"  Part="1" 
 AR Path="/5F84ED08/5F8D480F" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 3050 5850 50  0001 C CNN
-F 1 "GNDD" H 3054 5945 50  0000 C CNN
-F 2 "" H 3050 6100 50  0001 C CNN
-F 3 "" H 3050 6100 50  0001 C CNN
-	1    3050 6100
+F 0 "#PWR020" H 3150 5900 50  0001 C CNN
+F 1 "GNDD" H 3154 5995 50  0000 C CNN
+F 2 "" H 3150 6150 50  0001 C CNN
+F 3 "" H 3150 6150 50  0001 C CNN
+	1    3150 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3050 6050 3050 6100
-Wire Wire Line
-	2850 6050 2850 6100
-Wire Wire Line
-	2850 6100 3050 6100
-Connection ~ 3050 6100
 $Comp
 L power:GNDD #PWR?
 U 1 1 5F8D4819
@@ -858,7 +851,7 @@ Text Label 3750 5150 0    50   ~ 0
 Led1
 Text Label 3750 5250 0    50   ~ 0
 Led2
-Text Label 3750 5650 0    50   ~ 0
+Text Label 2950 6300 2    50   ~ 0
 Relay
 Text Label 2250 6550 2    50   ~ 0
 Photocell
@@ -983,10 +976,8 @@ NoConn ~ 3550 4750
 NoConn ~ 3550 4850
 NoConn ~ 3550 4950
 NoConn ~ 3550 5050
-NoConn ~ 3550 5450
 NoConn ~ 3550 5550
 NoConn ~ 2750 6050
-NoConn ~ 2950 6050
 NoConn ~ 2450 6050
 NoConn ~ 2150 6050
 Text Label 2350 6650 2    50   ~ 0
@@ -1105,78 +1096,76 @@ Wire Notes Line
 $Comp
 L Connector_Generic:Conn_01x02 BAT?
 U 1 1 5F8EE8E1
-P 9650 5800
+P 7850 5750
 AR Path="/5F8EE8E1" Ref="BAT?"  Part="1" 
 AR Path="/5F84ED08/5F8EE8E1" Ref="BAT1"  Part="1" 
-F 0 "BAT1" H 9568 6017 50  0000 C CNN
-F 1 "Conn_01x02" H 9568 5926 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9650 5800 50  0001 C CNN
-F 3 "~" H 9650 5800 50  0001 C CNN
-	1    9650 5800
+F 0 "BAT1" H 7768 5967 50  0000 C CNN
+F 1 "Conn_01x02" H 7768 5876 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7850 5750 50  0001 C CNN
+F 3 "~" H 7850 5750 50  0001 C CNN
+	1    7850 5750
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR?
 U 1 1 5F8EE8E7
-P 9950 5950
+P 8150 5900
 AR Path="/5F8EE8E7" Ref="#PWR?"  Part="1" 
 AR Path="/5F84ED08/5F8EE8E7" Ref="#PWR018"  Part="1" 
-F 0 "#PWR018" H 9950 5700 50  0001 C CNN
-F 1 "GNDD" H 9954 5795 50  0000 C CNN
-F 2 "" H 9950 5950 50  0001 C CNN
-F 3 "" H 9950 5950 50  0001 C CNN
-	1    9950 5950
+F 0 "#PWR018" H 8150 5650 50  0001 C CNN
+F 1 "GNDD" H 8154 5745 50  0000 C CNN
+F 2 "" H 8150 5900 50  0001 C CNN
+F 3 "" H 8150 5900 50  0001 C CNN
+	1    8150 5900
 	1    0    0    -1  
 $EndComp
-Text Label 9950 5800 0    50   ~ 0
+Text Label 8150 5750 0    50   ~ 0
 +3.3v
 Wire Wire Line
-	9850 5800 9950 5800
+	8050 5750 8150 5750
 Wire Wire Line
-	9850 5900 9950 5900
+	8050 5850 8150 5850
 Wire Wire Line
-	9950 5900 9950 5950
-Text HLabel 6950 5700 2    50   Input ~ 0
+	8150 5850 8150 5900
+Text HLabel 10500 1200 2    50   Input ~ 0
 3.3v
-Text HLabel 6950 6300 2    50   UnSpc ~ 0
+Text HLabel 10500 1050 2    50   UnSpc ~ 0
 GND
-Text HLabel 6950 5850 2    50   Output ~ 0
+Text HLabel 10500 900  2    50   Output ~ 0
 OpenC
-Text HLabel 6950 6000 2    50   Input ~ 0
+Text HLabel 10500 1350 2    50   Input ~ 0
 PIR
-Text HLabel 6950 6150 2    50   Output ~ 0
+Text HLabel 10500 1500 2    50   Output ~ 0
 Relay
-Text Label 6800 5700 2    50   ~ 0
+Text Label 10350 1200 2    50   ~ 0
 +3.3v
 $Comp
 L power:GNDD #PWR?
 U 1 1 5F8F5116
-P 6550 6300
+P 10000 1050
 AR Path="/5F8F5116" Ref="#PWR?"  Part="1" 
 AR Path="/5F84ED08/5F8F5116" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 6550 6050 50  0001 C CNN
-F 1 "GNDD" H 6554 6145 50  0000 C CNN
-F 2 "" H 6550 6300 50  0001 C CNN
-F 3 "" H 6550 6300 50  0001 C CNN
-	1    6550 6300
+F 0 "#PWR021" H 10000 800 50  0001 C CNN
+F 1 "GNDD" H 10004 895 50  0000 C CNN
+F 2 "" H 10000 1050 50  0001 C CNN
+F 3 "" H 10000 1050 50  0001 C CNN
+	1    10000 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 6300 6950 6300
-Wire Wire Line
-	6800 5700 6950 5700
-Text Label 6800 5850 2    50   ~ 0
+	10350 1200 10500 1200
+Text Label 10350 900  2    50   ~ 0
 OpenC
-Text Label 6800 6000 2    50   ~ 0
+Text Label 10350 1350 2    50   ~ 0
 PIR
-Text Label 6800 6150 2    50   ~ 0
+Text Label 10350 1500 2    50   ~ 0
 Relay
 Wire Wire Line
-	6800 5850 6950 5850
+	10350 900  10500 900 
 Wire Wire Line
-	6800 6000 6950 6000
+	10350 1350 10500 1350
 Wire Wire Line
-	6800 6150 6950 6150
+	10350 1500 10500 1500
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5F7F424A
@@ -1230,4 +1219,35 @@ F 3 "" H 12600 7200 50  0001 C CNN
 	1    12600 7200
 	1    0    0    -1  
 $EndComp
+Text Label 10300 1800 2    50   ~ 0
+Energy_Pulses
+Text Label 10300 1650 2    50   ~ 0
+Enery_Tx
+Text HLabel 10500 1650 2    50   Input ~ 0
+Enery_Tx
+Text HLabel 10500 1800 2    50   Input ~ 0
+Enery_Pulses
+Wire Wire Line
+	10300 1650 10500 1650
+Wire Wire Line
+	10300 1800 10500 1800
+Wire Wire Line
+	10000 1050 10500 1050
+Text Label 3750 5650 0    50   ~ 0
+Energy_Pulses
+Text Label 3750 5450 0    50   ~ 0
+Enery_Tx
+Wire Wire Line
+	3550 5450 3750 5450
+Wire Wire Line
+	2950 6050 2950 6300
+Wire Wire Line
+	3150 6150 3050 6150
+Wire Wire Line
+	2850 6150 2850 6050
+Wire Wire Line
+	3050 6050 3050 6150
+Connection ~ 3050 6150
+Wire Wire Line
+	3050 6150 2850 6150
 $EndSCHEMATC
