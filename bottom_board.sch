@@ -239,13 +239,11 @@ Wire Wire Line
 	4300 4000 4300 3950
 Wire Wire Line
 	1700 4050 1700 3950
-Connection ~ 1700 4050
 Wire Wire Line
 	1700 3550 1700 3650
-Connection ~ 1700 3550
-Text Label 850  4050 2    50   ~ 0
+Text Label 1350 4050 2    50   ~ 0
 Neutro
-Text Label 850  3550 2    50   ~ 0
+Text Label 1350 3550 2    50   ~ 0
 Linea
 $Comp
 L Device:Jumper JP?
@@ -791,29 +789,10 @@ F 3 "~" H 3550 5900 50  0001 C CNN
 	1    3550 5900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:SPARK_GAP E1
-U 1 1 5F8EA820
-P 1150 3800
-F 0 "E1" V 1100 3650 50  0000 L CNN
-F 1 "SPARK_GAP" V 1200 3350 50  0000 L CNN
-F 2 "" H 1150 3730 50  0001 C CNN
-F 3 "~" V 1150 3800 50  0001 C CNN
-	1    1150 3800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	850  3550 1150 3550
+	1350 3550 1700 3550
+Connection ~ 1700 3550
 Wire Wire Line
-	850  4050 1150 4050
-Wire Wire Line
-	1150 4000 1150 4050
-Connection ~ 1150 4050
-Wire Wire Line
-	1150 4050 1700 4050
-Wire Wire Line
-	1150 3600 1150 3550
-Connection ~ 1150 3550
-Wire Wire Line
-	1150 3550 1700 3550
+	1350 4050 1700 4050
+Connection ~ 1700 4050
 $EndSCHEMATC
