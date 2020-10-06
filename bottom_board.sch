@@ -771,7 +771,7 @@ AR Path="/5F7A8CEE" Ref="JP?"  Part="1"
 AR Path="/5F91F411/5F7A8CEE" Ref="JP5"  Part="1" 
 F 0 "JP5" H 3550 6485 50  0000 C CNN
 F 1 "Jumper_2_Open" H 3550 6394 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3550 6250 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3550 6250 50  0001 C CNN
 F 3 "~" H 3550 6250 50  0001 C CNN
 	1    3550 6250
 	1    0    0    -1  
@@ -784,7 +784,7 @@ AR Path="/5F93137C" Ref="JP?"  Part="1"
 AR Path="/5F91F411/5F93137C" Ref="JP4"  Part="1" 
 F 0 "JP4" H 3550 6135 50  0000 C CNN
 F 1 "Jumper_2_Open" H 3550 6044 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3550 5900 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3550 5900 50  0001 C CNN
 F 3 "~" H 3550 5900 50  0001 C CNN
 	1    3550 5900
 	1    0    0    -1  
