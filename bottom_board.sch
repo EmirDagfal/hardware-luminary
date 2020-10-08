@@ -571,7 +571,7 @@ U 1 1 5F795C69
 P 4900 6350
 F 0 "U3" H 4900 6715 50  0000 C CNN
 F 1 "HLW8032_module" H 4900 6624 50  0000 C CNN
-F 2 "proyect_new:HLW8032_module" H 4900 6350 50  0001 C CNN
+F 2 "proyect_new:HLW8032_module_vertical" H 4900 6350 50  0001 C CNN
 F 3 "" H 4900 6350 50  0001 C CNN
 	1    4900 6350
 	1    0    0    -1  
